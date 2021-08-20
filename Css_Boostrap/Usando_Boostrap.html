@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRIMER FORMULARIO BOOSTRAP</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+    
+</head>
+
+<center><body>
+    
+        <p>
+            <label>
+                Nombre
+                <input type="text" name="nombre_cliente" required>
+            </label>
+        </p>
+
+        <p>
+            <label>
+                Telefono
+                <input type="tel" name="Numero_telefono" required>
+            </label>
+        </p>
+
+        <p>
+            <label>
+                Email
+                <input type="email" name="Direccion_de_correo" required>
+            </label>
+        </p>
+
+        <fieldset>
+            <legend> Que taxi quiere? </legend>
+            <p>
+                <label>
+                    <input type="radio" name="taxi" required value="car">
+                    Carrito
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="radio" name="taxi" required value="tuk tuk">
+                    tuk tuk
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="radio" name="Suv" required value="Van">
+                    Suv
+                </label>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend> EXTRAS</legend>
+            <P>
+                <label>
+                    <input type="checkbox" name="EXTRAS" value="baby">
+                    Sila de bebe
+                </label>
+            </P>
+
+            <P>
+                <label>
+                    <input type="checkbox" name="EXTRAS" value="musica">
+                    No Regueton
+                </label>
+            </P>
+            <P>
+                <label>
+                    <input type="checkbox" name="EXTRAS" value="SillaRueda">
+                    Silla de Ruedas
+                </label>
+            </P>
+        </fieldset>
+
+        <p>
+            <label> Dia y Hora?
+                <input type="datetime-local" name="fecha_hora" required>
+
+            </label>
+        </p>
+
+        <p>
+            <label> Lugar para recojer
+                <select id="pickup_placy" name="pickup_placy">
+                    <option value="selected=" selected> Selecciones optcion</option>
+                    <option value="oficiona"> Oficina</option>
+                    <option value="feria"> La Feria </option>
+                    <option value="Campus"> UMG</option>
+                    <option value="No se "> Le digo al Cacho</option>
+                </select>
+
+            </label>
+        </p>
+
+        <p>
+            <label> Dajar en:
+                <input type="text" name="Dejar_en" required list="destino">
+            </label>
+            <datalist id="destino">
+
+                <label for="exampleDataList" class="form-label">Destino</label>
+                <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+                <datalist id="datalistOptions">
+                  <option value="Aeropuesto">
+                  <option value="La Playa">
+                  <option value="La Biblioteca">
+                </datalist>
+
+
+        <p>
+            <label> 
+        
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Instrucciones Especiales</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+            </label>
+        </p>
+        <p>
+            <button class="btn btn-primary"> Hacer Cita</button>
+        </p>
+
+        </p>
+    
+   
+</body>
+</center>
+
+</html>

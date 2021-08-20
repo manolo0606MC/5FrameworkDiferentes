@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRIMER FORMULARIO BOOSTRAP</title>
+    <link rel="stylesheest" href="style.css"> 
+    
+</head>
+
+<body>
+    
+        <p>
+            <label>
+                Nombre
+                <input type="text" name="nombre_cliente" required>
+            </label>
+        </p>
+
+        <p>
+            <label>
+                Telefono
+                <input type="tel" name="Numero_telefono" required>
+            </label>
+        </p>
+
+        <p>
+            <label>
+                Email
+                <input type="email" name="Direccion_de_correo" required>
+            </label>
+        </p>
+
+        <fieldset>
+            <legend> Que taxi quiere? </legend>
+            <p>
+                <label>
+                    <input type="radio" name="taxi" required value="car">
+                    Carrito
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="radio" name="taxi" required value="tuk tuk">
+                    tuk tuk
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="radio" name="Suv" required value="Van">
+                    Suv
+                </label>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend> EXTRAS</legend>
+            <P>
+                <label>
+                    <input type="checkbox" name="EXTRAS" value="baby">
+                    Silla de bebe
+                </label>
+            </P>
+
+            <P>
+                <label>
+                    <input type="checkbox" name="EXTRAS" value="musica">
+                    No Regueton
+                </label>
+            </P>
+            <P>
+                <label>
+                    <input type="checkbox" name="EXTRAS" value="SillaRueda">
+                    Silla de Ruedas
+                </label>
+            </P>
+        </fieldset>
+
+        <p>
+            <label> Dia y Hora?
+                <input type="datetime-local" name="fecha_hora" required>
+
+            </label>
+        </p>
+
+        <p>
+            <label> Lugar para recojer
+                <select id="pickup_placy" name="pickup_placy">
+                    <option value="selected=" selected> Selecciones optcion</option>
+                    <option value="oficiona"> Oficina</option>
+                    <option value="feria"> La Feria </option>
+                    <option value="Campus"> UMG</option>
+                    <option value="No se "> Le digo al Cacho</option>
+                </select>
+
+            </label>
+        </p>
+
+        <p>
+            <label> Dajar en:
+                <input type="text" name="Dejar_en" required list="destino">
+            </label>
+            <datalist id="destino">
+                <option value="Aeropuerto"></option>
+                <option value="Playa"></option>
+                <option value="La Biblioteca"></option>
+            </datalist>
+        <p>
+            <label> Intrucciones especiales
+                <textarea name="Comentarios" maxlength="500"></textarea>
+            </label>
+        </p>
+        <p>
+            <button> Hacer Cita</button>
+        </p>
+
+        </p>
+    
+   
+</body>
+
+
+</html>
